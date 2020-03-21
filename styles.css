@@ -1,0 +1,160 @@
+:root {
+  --colorOne: #d0edf5;
+  --colorTwo: #ebebeb;
+  --colorThree: #fdf9ba;
+  --colorFour: #fdc3c1;
+  --colorFive: #fdc3c2;
+  --colorSix: #d0edf5;
+  --colorSeven: #fdf2af;
+  --colorEight: #ddeacf;
+  --colorNine: #ececec;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.header {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.header h1 {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
+.header .header__column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav span {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav li {
+  margin-bottom: 10px;
+}
+
+.header__nav li:last-child {
+  margin-bottom: 0px;
+}
+
+.grid {
+  grid-auto-rows: 300px;
+  grid-gap: 20px;
+}
+
+.grid .grid__item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid .grid__item:first-child {
+  grid-row: span 2;
+  background-color: var(--colorOne);
+}
+
+.grid .grid__item:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://lh3.googleusercontent.com/proxy/F0atJCd3k6RFJOzelk7g_EzvJ2jCsTCsr2vPedBcB87HA7cQppNpTZqqmKaEZkVQWQFt1YQUt47fAbrsC750uFStdCga0BIi9cWSiMvF9t8YvM1MUaT-zdOUvAsdTdDgOrXW_g6d0mIWm1y96Rhx_3s_KzLDLx3v3_cUThJs6w7ekS5t01ITAGEa76w0SkjM);
+}
+
+.grid .grid__item:nth-child(3) {
+  grid-area: span 1 / span 1;
+  background-color: var(--colorEight);
+}
+
+.grid .grid__item:nth-child(4) {
+  grid-row: span 2;
+  background-image: url(https://lh3.googleusercontent.com/proxy/kiVcbXm8N4-ab3wx8WdmIUMS17wqAoqh4uKUkTMZZF6uCLIXUoUQmJJLpm1eQx2mEQY-aN5_NskPjtMSkrVgbR4_D4hXYxrthvWlCImwv6MFQ8dcg4X5I9CUkeBJdU3b);
+}
+
+.grid .grid__item.grid__item:nth-child(5) {
+  background-color: var(--colorThree);
+  grid-row: span 1;
+}
+
+.grid .grid__item.grid__item:nth-child(6) {
+  background-color: var(--colorNine);
+  grid-row: span 1;
+}
+
+.grid .grid__item.grid__item:nth-child(7) {
+  background-color: var(--colorNine);
+  grid-row: span 1;
+}
+
+.grid .grid__item.grid__item:nth-child(8) {
+  background-color: var(--colorNine);
+  grid-area: span 2 / span 2;
+  background-color: var(--colorFive);
+}
+
+.grid .grid__item.grid__item:nth-child(9) {
+  grid-area: span 2 / span 1;
+  background-image: url(https://cdn.shopify.com/s/files/1/0860/8486/files/Chrono-tan.jpg?v=1564149276);
+}
+
+.grid .grid__item.grid__item:nth-child(10) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://image.edaily.co.kr/images/Photo/files/NP/S/2019/10/PS19100700828.jpg);
+}
+
+.grid .grid__item.grid__item:nth-child(11) {
+  grid-row: span 1;
+  background-image: url(https://hackster.imgix.net/uploads/attachments/940359/aws_iot_-hackster2x_cuKmfeEoRk.png?auto=compress%2Cformat&w=900&h=675&fit=min);
+}
+
+.grid .grid__item.grid__item:nth-child(12) {
+  grid-row: span 1;
+  background-image: url(https://www.actian.com/wp-content/uploads/2019/10/AV9-A.jpg);
+}
+
+.grid .grid__item.grid__item:nth-child(13) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorEight);
+}
+
+.grid .grid__item.grid__item:nth-child(14) {
+  grid-row: span 1;
+  background-image: url(https://www.bodpress.com/frontend/static/img/j/1/alphago.jpg);
+}
+
+.grid .grid__item.grid__item:nth-child(15) {
+  grid-row: span 1;
+  background-color: var(--colorSix);
+}
+
+.fourGrid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
